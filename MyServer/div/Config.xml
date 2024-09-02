@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServerConfig>
+	<ServerPort>
+		7007
+	</ServerPort>
+	<shutDownPort>
+		7006
+	</shutDownPort>
+	<ServerName>
+		tcp
+	</ServerName>
+
+</ServerConfig>

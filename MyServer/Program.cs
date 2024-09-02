@@ -1,6 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-using MyServer;
+﻿using MyServer;
+using MyServer.div;
 
-Console.WriteLine("Hello, World!");
-myserver server = new myserver(7007, "My");
-    server.Start();
+ReadConfig config = new ReadConfig();
+config.readConfig("../../../div/Config.xml");
+
+myserver server = new myserver(config.ServerPortNr,config.shutDownPortNr, config.ServerNametr);
+
+server.Start();
