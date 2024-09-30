@@ -6,4 +6,7 @@ config.readConfig("../../../div/Config.xml");
 
 myserver server = new myserver(config.ServerPortNr,config.shutDownPortNr, config.ServerNametr);
 
+TryLog log = new TryLog();
+log.Start();
+
 server.Start();
